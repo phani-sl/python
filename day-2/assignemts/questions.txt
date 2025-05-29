@@ -1,0 +1,5 @@
+1. What kind of language is Python? What do you mean by interpreted language.
+2. What are keywords in Python? Give some examples.
+3. What are datatypes in Python? Give some basic datatypes with brief explaination.
+4. What is a variable? What is the purpose of this.
+5. Can I call data types as keywords? If Yes, why?

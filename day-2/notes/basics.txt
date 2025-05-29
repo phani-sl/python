@@ -1,0 +1,27 @@
+ 1. What kind of language is Python ? What do you mean by interpreted language.
+    Python is a interpreted and dynamic typing language. Interpreted language is where the code is executed by line by line by an interpreter at runtime.
+    Machine Understandable language. 1 or 0 (bits).
+
+ 2. What are keywords in Python? Give some examples.
+    Keywords are predefined words for specific use case.
+    Examples : def, class, int, float, boolean, float...
+
+ 3. What are datatypes in Python? Give some basic datatypes with brief explaination.    
+    A type of data. Datatype specifies which kind of value a variable holds.
+    Some basic datatypes are:
+    int : contains positive and negative numbers along with zero and without any decimal value.
+          Example: 10,23
+    float : numbers with a decimal value.
+          Example: 21.9,-8.9
+    string : a sequence of character enclosed in either single or double quotes.
+          Examplpe: "python", 'java'
+    boolean : either true or false
+    
+ 4. What is a variable? What is the purpose of this.
+    Variable is used to store a value. Its like a container for holding data.
+    Uses:
+    * holds values such as numbers, strings, lists and so on
+      example: x = 5 (int value)
+
+ 5. Can I call data types as keywords? If Yes, why?
+    No. We can't call datatpyes as keywords. But we can call keywords as datatypes.
