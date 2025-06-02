@@ -4,7 +4,7 @@
 
  2. What are keywords in Python? Give some examples.
     Keywords are predefined words for specific use case.
-    Examples : def, class, int, float, boolean, float...
+    Examples : def, class, int, float, boolean, float..
 
  3. What are datatypes in Python? Give some basic datatypes with brief explaination.    
     A type of data. Datatype specifies which kind of value a variable holds.
