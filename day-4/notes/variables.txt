@@ -1,0 +1,80 @@
+keyword:
+keyword is a predefined word for specific use case.
+Examples:
+int 
+float
+string
+bool
+
+============
+
+
+Datatype:
+A type of data. Datatype specifies which kind of value a variable holds.
+Some basic datatypes are:
+
+int : contains positive and negative numbers along with zero and without any decimal value.
+Example: 10,23
+
+float : numbers with a decimal value.
+Example: 21.9,-8.9
+
+string : a sequence of character enclosed in either single or double quotes.
+Examplpe: "python", 'java'
+
+boolean : either true or false
+
+============
+
+Variable:
+Variable is used to store a value. Its like a container for holding data.
+
+
+Declaration:
+{variable_name}:{data_type}
+a:int
+b:float
+c:string
+d:bool
+
+
+Assigining:
+{variable_name} = {value}
+name = "Phani"
+age = 20
+cgpa = 9.4
+bool = True
+
+==============
+
+Reassigning A variable:
+Yes, we can reassign variables in Python.
+
+x=20 # int
+x="abcd" # string
+print(x)
+abcd
+
+=============
+
+Dynamic Typing:
+checking the datatype of assigned variable.
+
+a=10
+print(type(a))
+
+b=str(a)
+print(type(b))
+c=float(a)
+print(c)
+
+
+
+
+
+
+
+
+
+
+
