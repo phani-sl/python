@@ -1,0 +1,7 @@
+1. What is a keyword? Give an examples.
+2. What is a data type? Give an example.
+3. What is a variable. Hod do you declare a variable and assign some value to it.
+4. Can I reassign to the variable. If yes, how?
+5. What is Dynamic typing? Is python of type daynamic typing? If yes, how?
+ 
+Note: I need to see all the examples of types => int, float, str, bool.
