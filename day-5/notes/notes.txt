@@ -1,0 +1,43 @@
+=============
+
+Function:
+A Function is a block of code that performs some task. It can be reused as many times needed.
+
+Syntax:
+
+def {function_name}(arguments):
+    # body of your function
+    return {data}   # return statement
+
+================
+
+===============
+
+Arguments:
+Argument is a value passed to a function.
+
+Variable:
+Variable stores a data.
+
+===============
+
+return statement:
+The return statement is used to exit a function and send a value back to the place where the function was called.
+
+purpose:
+pass data from the function
+send a result
+
+==============
+
+BUilt in Functions:
+These are predefined functions.
+
+Examples:
+int()
+float()
+bool()
+str()
+print()
+
+=============

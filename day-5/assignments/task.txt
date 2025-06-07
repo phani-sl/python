@@ -1,0 +1,5 @@
+1. What is a function? What is the syntax of it to create.
+2. What are arguments? How these are differ from variable.
+3. What is return statement in a function? What is the purpose of it.
+4. Write at lease 20+ function examples{With and Without arguments}.
+5. What are built in functions of Python. List down them.
