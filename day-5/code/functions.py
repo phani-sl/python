@@ -1,5 +1,30 @@
 def name():
     print("phani")
 
-print(20)
+
+def add(a, b):
+    return a + b
+
+
+def subtract(a, b):
+    return a - b
+
+
+def multiply(a, b):
+    return a * b
+
+
+def divide(a, b):
+    return a / b
+
+a = 35
+k = 56
+add_result = addition(a, b)
+print("add_result => ", add_result)
+
+
+def multiply(m: int, n: int) -> int:  # 13, 6
+    res = m * n
+    return res
+
 
