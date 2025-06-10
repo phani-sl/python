@@ -1,0 +1,90 @@
+ 
+ 
+ Relational Operators:
+ These are used to compare values. They return Boolean values (True or False).
+ =>
+ Greater than 
+ Less than
+ Equal to
+ Greater than or equal to
+ Less than or equal to
+
+ >  Greater than 
+ <  Less than    
+ == Equal to    
+ >= Greater than or equal to
+ <= Less than or equal to
+ 
+================================
+
+ Arithmetic Operators:
+ Mathematical operations.
+ => 
+ Addition 
+ Subtraction
+ Multiplication 
+ Division
+ Percentile
+
+ + Addition 
+ - Subtraction
+ * Multiplication 
+ / Division
+ % Percentile
+
+================================
+
+Logical Operators:
+Used to combine Conditional Statements and return a Boolean value (True or False).
+=>
+Logical AND
+Logical OR
+Logical NOT
+
+=> Logical AND => *
+True True => 1*1 = 1 => True
+True False => 1*0 = 0 => False
+False True => 0*1 = 0 => False
+False False => 0*0 = 0 => False
+
+
+=> Logical OR => +
+True True => 1+1 = 2 => True
+True False => 1+0 = 1 => True
+False True => 0+1 = 1 => True
+False False => 0+0 = 0 => False
+
+
+=> Logical NOT
+True => False
+False => True
+
+================================
+
+Assignment Operators:
+Used to assign values to variables.
+
+=>
++=
+-=
+*= 
+/=
+
+================================
+
+Default argument in Function:
+Arguments have default value ( of any data type ).
+If the value is not provided in Argument. Then it takes default value.
+
+
+================================
+
+
+
+    
+
+
+
+
+ 
+ 
