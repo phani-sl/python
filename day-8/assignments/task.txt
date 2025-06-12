@@ -1,0 +1,4 @@
+1. What are the type conversion built in functions. Write multiple examples on it with explanation.
+2. What are the mathematical built in functions. Write multiple examples on it with explanation.
+3. What are the type and print built in functions. Write multiple examples on it with explanation.
+4. What are the input built in function. Write multiple examples on it with explaination.

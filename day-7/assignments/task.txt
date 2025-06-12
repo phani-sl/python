@@ -1,0 +1,3 @@
+1. What are the assignment operators and relational operators. Write multiple examples on these.
+2. What are the conditional blocks in python. List down them with the flow of execution.
+3. Write multiple examples on each condition block.

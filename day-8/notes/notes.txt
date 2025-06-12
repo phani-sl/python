@@ -1,0 +1,63 @@
+=========
+
+Type Conversion built in functions:
+type conversion is converting one datatype into another datatype.
+Some of the type conversion built in functions are :
+=>
+ int()
+ float()
+ str()
+ bool()
+ f-strings()
+
+==========
+
+Mathematical Built in functions:
+used to perform number related operations.
+=>
+
+round()
+max()
+min()
+pow()
+divmod()
+abs()
+
+=========
+
+type and print built in functions:
+
+type()
+used to find the datatype of a value or variables
+
+print()
+used to display output on screen
+
+==========
+
+input built in functions:
+
+input() is a method which is used to read the data from user at run time of our program.
+Always the input function returns you string data type value.
+It is your responsibility to convert string data type to any other format.
+For conversting one data type to other, we are going to use type conversion methods.
+
+Example: 
+for converting to int datatype => int({value})
+float => float({value})
+str => str({value})
+bool => bool({value})
+
+
+Example Program:
+
+def addition(i, j):
+    print("i + j = ", i + j)
+
+k_str = input("Enter values : ")
+h_str = input()
+
+k_int = int(k_str)
+h_int = int(h_str)
+addition(k_int, h_int)
+

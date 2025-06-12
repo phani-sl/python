@@ -1,0 +1,136 @@
+
+=================
+
+Assignment Operators:
+assignment operator (=)
+Used to assign some values to variables.
+=>
+
++=
+-=
+*= 
+/=
+
+Relational Operators:
+These are used to compare values. They return Boolean values (True or False).
+ =>
+
+ Greater than 
+ Less than
+ Equal to
+ Greater than or equal to
+ Less than or equal to
+
+ >  Greater than 
+ <  Less than    
+ == Equal to    
+ >= Greater than or equal to
+ <= Less than or equal to
+ is
+ is not
+
+==================
+
+conditional blocks:
+
+Based on condition by Boolean expressions it shows True or False.
+Types of Conditional blocks:
+=>
+ if
+ if-else 
+ if-else-if 
+
+==============
+
+if 
+=>
+
+if conditional block or statement
+if {condition}:
+    --------------------
+    --------------------
+    --------------------
+    --------------------
+
+"""""""
+
+if condition:
+    # Code block executed if condition is True
+
+If condition is True → execute block
+If condition is False → skip block
+
+===============
+
+if-else
+=>
+
+if-else conditional block or statement
+if {condition}:
+    --------------------
+    --------------------
+    --------------------
+    --------------------
+else:
+    --------------------
+    --------------------
+    --------------------
+    --------------------
+
+if condition:
+    # Block executed if condition is True
+else:
+    # Block executed if condition is False
+
+If condition is True → execute if block
+If condition is False → execute else block
+
+===========
+
+if-elif
+=>
+
+if-elif conditional block or statement
+if {condition1}:
+    --------------------
+    --------------------
+    --------------------
+    --------------------
+elif {condition2}:
+    --------------------
+    --------------------
+    --------------------
+    --------------------
+elif {condition3}:
+    --------------------
+    --------------------
+    --------------------
+    --------------------
+    """
+    """
+    """
+    """
+    """
+elif {conditionn}:
+    --------------------
+    --------------------
+    --------------------
+    --------------------
+
+
+if condition1:
+    # Executed if condition1 is True
+elif condition2:
+    # Executed if condition1 is False and condition2 is True
+elif condition3:
+    # Executed if condition2 is False and condition3 is True
+elif:
+    # Executed if all above conditions are False
+
+=============
+
+
+
+
+
+
