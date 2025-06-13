@@ -1,0 +1,29 @@
+List:
+list is used to store multiple elements in a single variable.
+list cam be created using square braces []
+list ()
+
+Example:
+create a list of even numbers from 5 to 20.
+
+even_numbers_from_5to20: list = [6, 8, 10, 12, 14, 16, 18]
+print(even_numbers_from_5to20)
+
+Methods:
+Different methods present in the list are:
+
+append()
+insert()
+extend()
+remove()
+pop()
+sort()
+clear()
+count()
+index()
+reverse()
+copy()
+
+len default function:
+this is used to calculate lenght or size of the list.
+len()

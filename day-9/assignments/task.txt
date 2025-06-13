@@ -1,0 +1,4 @@
+1. What is list data type. How do you create a list. Write down the program for creating list all the ways.
+2. What are the different methods present in list. Write a brief explaination with multiple examples.
+3. What is len default function. What is the use of it.
+ 
