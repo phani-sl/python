@@ -60,13 +60,24 @@ even_numbers_from_5_20.clear()
 print("after clearing the list", even_numbers_from_5_20)
 
 
+users: list = []
+others = ['b', 'c', 'd', 'e', 'f']
 
+users.append('a') # 'a'
+users.extend(others) # 'a', 'b', 'c', 'd', 'e', 'f'
+users.remove('b') # 'a', 'c', 'd', 'e', 'f'
+users.pop(2) # 'a', 'c', 'e', 'f' # to perform pop() method use index number
+users.copy() # 'a', 'c', 'e', 'f'
+users.reverse() # 'f', 'e', 'c', 'a'
+users.sort() # 'a', 'c', 'e', 'f'
+users.insert(1, 'b') # use index position and new element
 
+index = users.index('f')
+print("after performing index :", index)
 
+count = users.count('a')
+print("after counting :", count)
 
+users.clear()
 
-
-
-
-
-
+print(users)
