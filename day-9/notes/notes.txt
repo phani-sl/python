@@ -9,21 +9,50 @@ create a list of even numbers from 5 to 20.
 even_numbers_from_5to20: list = [6, 8, 10, 12, 14, 16, 18]
 print(even_numbers_from_5to20)
 
+==================
+
 Methods:
 Different methods present in the list are:
 
 append()
+to add any one element to the list, then with append() can be used.
+
 insert()
+to add any element at the specific position, then by using index number with adding element in insert() method we can add.
+
 extend()
+if we want to store more than one element to the list then we use extend() method in the list.
+
 remove()
+remove() is used  to delete any of the element present in the list.
+
 pop()
+if we have removing element more than 1 then using its index number in the pop() we can perform this method.
+
 sort()
+to sort all the elements in the list into increasing order or decreasing order.
+
 clear()
+to remove all the elements in the list. we use clear() method.
+
 count()
+using count() we can count how many times a value is repeated.
+
 index()
+to know the position of an element in the list we use index()
+
 reverse()
+to arrange values in reverse then we use reverse() method.
+
 copy()
+copying same list, we use copy() method
+
+===============
 
 len default function:
 this is used to calculate lenght or size of the list.
 len()
+
+syntax:
+ len (list_name)
+
