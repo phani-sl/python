@@ -1,0 +1,64 @@
+set :
+set is a built in datatype used for storing elements. it doesn't hold duplicate elements.
+here there's no guarantte of order and it stores unique values.
+
+syntax:
+variable_name = {(value_1), (value_2), (value_3),........(value_n)}
+
+example:
+ids = {1, 2, 3, 4, 5}
+
+========
+
+methods present in set:
+
+add()
+=> ids.add()
+
+difference()
+=> ids.difference()
+
+difference_update()
+=> ids.difference_update()
+
+intersection()
+=> ids.intersection()
+
+intersection_update()
+=> ids.intersection_update()
+
+clear()
+=> ids.clear()
+
+copy()
+=> ids.copy()
+
+discard()
+=> ids.discard()
+
+remove()
+=> ids.remove()
+
+========
+
+difference between set and a list:
+list can hold same elements as many times it is.
+set holds only single time. it doesn't allow duplicate element.
+
+=========
+
+mutable datatypes:
+can be changed after creation.
+=>
+list
+set
+
+immutable datatypes:
+cannot be changed after creation.
+=>
+int 
+float
+string
+bool
+
+

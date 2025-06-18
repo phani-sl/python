@@ -19,7 +19,7 @@ def divide(a, b):
 
 a = 35
 k = 56
-add_result = addition(a, b)
+add_result = add(a, k)
 print("add_result => ", add_result)
 
 
