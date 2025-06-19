@@ -1,0 +1,3 @@
+1. What are the loops present in Python. Please write these loops on the notebook.
+2. Practice on for and while loops very weel.
+3. Using loops, how can we iterate through list and set.

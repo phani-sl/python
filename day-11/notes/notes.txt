@@ -39,6 +39,24 @@ discard()
 remove()
 => ids.remove()
 
+pop()
+=> ids.pop()
+
+issuperset()
+=> ids.issuperset()
+
+issubset()
+=> ids.subset()
+
+union()
+=> ids.union()
+
+symmetric_difference()
+=> ids.symmetric_difference()
+
+symmetric_difference_update()
+=> ids.ssymmetric_difference_update()
+
 ========
 
 difference between set and a list:
