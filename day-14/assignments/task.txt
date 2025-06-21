@@ -1,0 +1,1 @@
+1. Try to write a program to print different patterns. Prefer easiest ones first.
