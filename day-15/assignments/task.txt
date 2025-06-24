@@ -1,0 +1,2 @@
+1. Try to write a program to pint different patterns. Print 1 row of patterns.
+2. Go and read about time complexity and space complexity.

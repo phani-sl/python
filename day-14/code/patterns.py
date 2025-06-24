@@ -17,3 +17,7 @@ print("* " * 2)
 print("* " * 1)
 
 print("========")
+
+rows = 7
+for row in range (1, rows-1):
+    print("* " * row)
