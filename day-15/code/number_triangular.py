@@ -1,8 +1,10 @@
 rows = 4
-for i in range (1, rows+1):
-    print(" " * (rows-i), end="")
-    for j in range (i):
-        print(i, end=" ")
-        print()
+columns = 7
+mid = rows
+for row in range(1, rows+1):
+    print((mid-row)* " ", end="")
+    for time in range(1, row+1):
+         print(f"{row} ", end="")
+    print()
 
         
