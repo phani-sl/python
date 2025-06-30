@@ -1,0 +1,3 @@
+1. Try to write a program to print different patterns. Print 1 row of patterns.
+2. Go and read about time complexity and space complexity.
+3. What is dict? Write down the ways to create a dict with examples.
