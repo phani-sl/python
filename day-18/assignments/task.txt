@@ -1,0 +1,5 @@
+1. What is tuple. Syntax for creating a tuple. Create multiple tuples in different ways.
+2. Methods of tuple.
+3. What is packing and unpacking in tuple.
+4. Practice on tuple creation ways, methods, packing, unpacking.
+5. How do you unpack the values from tuple with lesser variables than the elemnets count present in the tuple.
