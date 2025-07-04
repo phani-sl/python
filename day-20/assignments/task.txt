@@ -1,0 +1,4 @@
+1. What is pass statement? What is the use of it. Write down some examples on it.
+2. How can you achieve do-while loop in Python which is present in other languages. Write down the way that can be achieved.
+3. What do you mean by Object Oriented Programming Language. How do you represent an Object through the language.
+4. Go and practice on the syntax of a class. Create multiple classes.
