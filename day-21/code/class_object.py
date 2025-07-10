@@ -18,9 +18,6 @@ print("l1 =", l1)
 print(type(l1))
 
 
-print("======================")
-
-
 
 # Mobile
 
