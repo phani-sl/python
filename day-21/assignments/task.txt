@@ -1,0 +1,13 @@
+1. What is a class and object. How do you create a class and object.
+2. Create a class and object for mentioned physical entities
+    1. Laptop
+    2. Mobile
+    3. Sun
+    4. Moon
+    5. File
+    6. Mouse
+    7. Bottle
+    8. MicroChip
+    9 XYZ,... etc
+
+    

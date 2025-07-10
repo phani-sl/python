@@ -1,0 +1,41 @@
+
+class:
+class is a blueprint of an object. It defines a set of attributes and methods(behaviours) that the created objects will have.
+
+syntax:
+class {name_of_class}:
+    =============
+    =============
+    =============
+
+
+
+object:
+Object is a physical entity that is present in the memory.
+It is an instance of a class. When we create an object, we are creating an instance of a class.
+
+syntax:
+{variable_name} = {name_of_class}()
+
+
+
+creation of an class and object:
+
+class Student:
+    def __init__(self, name, age):  # constructor
+        self.name = name
+        self.age = age
+
+    def display_info(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+
+# Creating an object of the class
+s1 = Student("Alice", 20)
+
+# Accessing method through object
+s1.display_info()
+
+
+
+
+
