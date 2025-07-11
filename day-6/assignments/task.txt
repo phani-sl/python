@@ -3,3 +3,5 @@
 3. What are the Logical operators in Python. Write some examples on them
 4. What are the Assignment operator in Python. Write some examples on them
 5. What is default argument in function, What is the use of it. Write atleast 10+ examples on them.
+
+

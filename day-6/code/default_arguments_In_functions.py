@@ -27,6 +27,7 @@ print("Percentile Result:", res)
 print("---------------------")
 
 
+
 def is_person_eligible_for_vote(age: int, qualified_age: int = 18):
     return age >= qualified_age
 
