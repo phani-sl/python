@@ -27,4 +27,3 @@ def multiply(m: int, n: int) -> int:  # 13, 6
     res = m * n
     return res
 
-
