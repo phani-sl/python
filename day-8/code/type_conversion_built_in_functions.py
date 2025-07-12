@@ -30,6 +30,3 @@ print(w, type(w))
 v = int(False)
 print(v, type(v))
 
-
-
-

@@ -86,8 +86,3 @@ print("max('a','bc') =", max('a','bc'))  # returns the largest string value
 print("==================================")
 
 
-
-
-
-
-
