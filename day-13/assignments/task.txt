@@ -1,0 +1,4 @@
+
+1. What is break in python? Where and why do you use it. Write some examples on it.
+2. Write brief explaination on built in functions range, sorted, map, set, list. Write examples on all these.
+3. What is lambda function? What is the syntax for it. Why and where do you use this function. Write many examples on this.
