@@ -68,4 +68,3 @@ elif num == 0:
     print("Number is zero")
 
 print("=====================")
-
