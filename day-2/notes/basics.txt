@@ -25,3 +25,5 @@
 
  5. Can I call data types as keywords? If Yes, why?
     No. We can't call datatpyes as keywords. But we can call keywords as datatypes.
+
+    

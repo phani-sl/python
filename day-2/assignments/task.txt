@@ -3,3 +3,4 @@
 3. What are datatypes in Python? Give some basic datatypes with brief explaination.
 4. What is a variable? What is the purpose of this.
 5. Can I call data types as keywords? If Yes, why?
+
