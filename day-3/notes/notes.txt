@@ -1,0 +1,8 @@
+
+1. Add Files To The Staging : git add file_name or git add .
+2. Commit Files : git commit -m "commit message"
+3. Push Files To Github : git push 
+4. Pull files from github :  git pull
+5. Check files  status : git status
+6. Clone repository : git clone repository_url
+
