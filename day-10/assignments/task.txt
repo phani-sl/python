@@ -4,4 +4,3 @@
 3. What is the different b/w a set and a list.
 4. Look after all the methods which are present in the set and practice on them. if something is not understable, then we will discuss in the class.
  
- 

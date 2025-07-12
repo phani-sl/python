@@ -107,5 +107,3 @@ print("set_1 is disjoint with set_4:", set_1.isdisjoint(set_4))
 # isdisjoint method returns True if there are no common elements between the sets
 # and False if there are common elements
 
-
-

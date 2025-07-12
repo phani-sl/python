@@ -92,4 +92,3 @@ set_2.symmetric_difference_update(set_1)
 print("set_2 after symmetric_difference_update with set_1:", set_2)
 
 
-
