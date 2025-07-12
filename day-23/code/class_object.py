@@ -186,3 +186,4 @@ mc1.get_category()  # Call class method
 print("mc1 =", mc1)
 print(type(mc1))
 
+
