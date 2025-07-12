@@ -1,0 +1,41 @@
+
+pass statement
+pass statement does nothing. it skips future code.
+example:
+
+x = 5
+if x > 3:
+    pass
+
+
+for i in range(1, 5):
+    pass
+
+
+def addition(a, b):
+    pass
+
+
+
+do-while loop
+in python there is no built in do while loop. but we can create do while loop using while loop true and break statement
+do while loop run atleast once
+checks condition at end of the loop
+syntax:
+while True:
+    block of code
+    if not condition:
+    break 
+
+example:
+i = 1
+while True:
+    print(i)
+    i += 1
+    if i > 5:
+        break
+
+
+
+Object Oriented Programming Language:
+
