@@ -5,3 +5,4 @@ for row in range(0,rows+1):
         print(count,end=' ')
         count+=1    
     print()
+    

@@ -6,6 +6,3 @@ for i in range(rows):
         print(count, end=" ")
         count += 1
     print()
-
-
-                
