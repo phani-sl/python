@@ -7,3 +7,5 @@ while rows >= 1:
         print("* ", end="")
     print()
     rows -= 1
+
+    
