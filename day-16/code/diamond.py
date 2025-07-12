@@ -19,3 +19,5 @@ def print_diamond(n):
 
 
 print_diamond(5)
+
+

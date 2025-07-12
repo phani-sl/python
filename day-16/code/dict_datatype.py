@@ -33,4 +33,3 @@ print(dict)
 dict.clear()  # Removes all items from the dictionary
 print(dict)  
 
-
