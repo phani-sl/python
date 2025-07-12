@@ -145,3 +145,18 @@ print(s1.school_name)           # Output: ABC High School
 # Accessing class method
 print(Student.get_school_name())   # Output: ABC High School
 print(s1.get_school_name())        # Output: ABC High School
+
+
+class & object level attributes and methods:
+
+class level attribute is shared in all instances of class
+object level attribute is unique to each object
+
+class level attribute is used inside the class
+object level attribute uses self inside initialization of objects
+
+class level method uses @classMethod decorator
+first argument is cls
+
+object level method 
+first argument is self
