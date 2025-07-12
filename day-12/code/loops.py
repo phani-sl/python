@@ -75,6 +75,3 @@ while sum > 10:
     sum -= 1  # decrement sum by 1 to avoid infinite loop
 
 
-
-
-
