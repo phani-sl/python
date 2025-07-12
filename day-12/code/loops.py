@@ -73,5 +73,3 @@ sum = 60
 while sum > 10:
     print("sum =", sum)
     sum -= 1  # decrement sum by 1 to avoid infinite loop
-
-
