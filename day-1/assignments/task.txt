@@ -1,1 +1,5 @@
-testing git
+1. Define Github.
+2. Create a Repository.
+
+
+

@@ -1,11 +1,118 @@
-Add Files To The Staging : git add file_name or git add .
 
-Commit Files : git commit -m "commit message"
+1. Add Files To The Staging : git add file_name or git add .
+2. Commit Files : git commit -m "commit message"
+3. Push Files To Github : git push 
+4. Pull files from github :  git pull
+5. Check files  status : git status
+6. Clone repository : git clone repository_url
 
-Push Files To Github : git push 
 
-Pull files from github :  git pull
+# process
 
-Check files  status : git status
+1. Download Git from https://github.com/git-for-windows/git/releases/download/v2.46.0.windows.1/Git-2.46.0-64-bit.exe
+2. Install it.
+3. Set the Environment Variable Path with "**\Git\cmd"
+4. Verify your git installation. "git --version"
+5. Create an account and Remote Repository in the github. https://github.com/
 
-Clone repository : git clone repository_url
+Note: the repository name should be "python"
+
+### Git Commads
+1. To Clone a Repository 
+		git clone {url-of-repository}
+		
+If it is not logged in yet, it asks you for login. (username/password or personal access token)
+
+2. After doing your changes you need to stage the changes 
+
+		git add {filename} 
+				
+				or
+				
+		git add {filename1} {filename2}  {filename3} ......... {filename n} 
+				
+				or
+
+		git add .
+		
+3. Commit the changes that are staged.
+
+		git commit -m '{some meaningful message}'
+		
+4. Publish the commit to the remote repository.
+
+		git push
+		
+5. To take the latest changes from remote repository
+
+		git pull
+		
+6. To create a new branch in my local system
+
+		git checkout -b {name of new branch}
+
+7. To check the status of your local repository (changes you have done)
+
+		git status
+		
+==================================================================================================================
+
+### Creating your respository in local system and publish it..
+		
+1. Create a local folder and make it as local repository.
+	"git init"
+2. Write some code here. Validate the branch in your local system repository and remote repository branch that you created same or not. 
+	Ex: In remote repo the branch name is "main" then,. when you execute
+	"git status" command should give the same branch name saying "On branch main".
+
+	If not, please create the local branch with the same name..,
+	"git checkout -b main"
+	Now go ahead with the next steps.
+	
+3. Stage the changes or files you have created newly.
+	"git add {{path}/fileName}"
+	
+	if you need to stage all the files or the changes, then
+	
+	"git add ."
+	
+4. Commit your staged changes.
+	"git commit -m '{message}' "
+
+5. You have already created a remote repo with the same name. Now you need to link both of them.
+
+	"git remote add origin {url}"
+	
+	Note: Please check the url is having any special characters in it. if yes, please remove them or first copy paste to notepad and then paste to git bash.
+
+6. Now you will have to publish the commited changes.
+
+	"git push -u origin main"
+
+========================================================================================================================
+
+### Other Commands
+1. To fetch unrelated histories of the repo
+
+		git pull --allow-unrelated-histories 
+		
+2. To push new branch created in your local system to remote repository
+
+		git push --set-upstream origin {name of new branch}
+		
+		
+========================================================================================================================
+		
+1. Local Changes are done.
+2. You are trying to checkout to new branch without commiting these changes.
+	At this time,
+		1. Stash you changes.
+		2. Checkout to new branch.
+		3. Apply your changes.
+		
+		
+		
+		
+To checkout to branch which is already existing in the remote repository
+		git checkout {name of new branch}
+
