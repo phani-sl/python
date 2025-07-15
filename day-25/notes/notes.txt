@@ -1,0 +1,192 @@
+
+
+
+# object instance
+object is a physical entity that is present in the memory.
+It is an instance of a class. When we create an object, we are creating an instance of a class.
+
+syntax:
+{variable_name} = {name_of_class}()
+
+# object attributes
+attributes are variables that store data about the object.
+they are defined inside the class and usually initialized in the __init__() method.
+
+class Student:
+    def __init__(self, name, age):   # Constructor
+        self.name = name             # Instance attribute
+        self.age = age               # Instance attribute
+
+name and age are object attributes
+
+# object methods
+methods are functions defined inside a class that operate on object data.
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):  # Instance method
+        print(f"My name is {self.name} and I am {self.age} years old.")
+
+# creating an object
+student1 = Student("Alice", 20)
+
+# creating an object attribute
+student1.grade = "A"
+
+# creating object method
+def display(self):
+    ============
+    ============
+
+# accessing object attributes and methods
+print(student1.name)       # accessing attribute
+student1.display()         # Call method
+
+example:
+class Car:
+    def __init__(self, brand, year):
+        self.brand = brand         # Attribute
+        self.year = year           # Attribute
+
+    def info(self):                # Method
+        print(f"{self.brand} was made in {self.year}")
+
+# Creating object
+my_car = Car("Toyota", 2020)
+
+# Accessing attributes
+print(my_car.brand)       # Output: Toyota
+print(my_car.year)        # Output: 2020
+
+# Accessing method
+my_car.info()             # Output: Toyota was made in 2020
+
+
+
+
+# class
+class is a blueprint of an object. It defines a set of attributes and methods(behaviours) that the created objects will have.
+
+syntax:
+class {name_of_class}:
+    =============
+    =============
+    =============
+
+# class attribute
+class Dog:
+    species = "Canis Familiaris"   # Class attribute
+
+    def __init__(self, name):
+        self.name = name           # Instance attribute
+ species is a class attribute
+ name is a instance attribute
+
+
+ # class method
+ A class method is a method that works on the class itself, not on instances.
+ It is defined using the @classmethod and takes cls.
+
+ class Dog:
+    species = "Canis Familiaris"   # Class attribute
+
+    def __init__(self, name):
+        self.name = name
+
+    @classmethod
+    def get_species(cls):         # Class method
+        return cls.species
+
+# creating class attribute
+class MyClass:
+    class_attr = 42  # This is a class attribute
+
+# creating class method
+class MyClass:
+    value = 10
+
+    @classmethod
+    def show_value(cls):
+        print("Value is:", cls.value)
+
+# accessing class attributes and methods
+
+using the class name
+print(Dog.species)         # Output: Canis Familiaris
+print(Dog.get_species())   # Output: Canis Familiaris
+
+using object
+dog1 = Dog("Buddy")
+print(dog1.species)        # Output: Canis Familiaris
+print(dog1.get_species())  # Output: Canis Familiaris
+
+example:
+
+class Student:
+    school_name = "ABC High School"     # Class attribute
+
+    def __init__(self, name):
+        self.name = name                # Instance attribute
+
+    @classmethod
+    def get_school_name(cls):          # Class method
+        return cls.school_name
+
+# Creating objects
+s1 = Student("Alice")
+s2 = Student("Bob")
+
+# Accessing class attribute
+print(Student.school_name)      # Output: ABC High School
+print(s1.school_name)           # Output: ABC High School
+
+# Accessing class method
+print(Student.get_school_name())   # Output: ABC High School
+print(s1.get_school_name())        # Output: ABC High School
+
+
+class & object level attributes and methods:
+
+class level attribute is shared in all instances of class
+object level attribute is unique to each object
+
+class level attribute is used inside the class
+object level attribute uses self inside initialization of objects
+
+class level method uses @classMethod decorator
+first argument is cls
+
+object level method 
+first argument is self
+
+
+static methods:
+a method that belongs to a clss and it is not require any instance or cls. it is used as @staticmethod decorator
+it is used to not only for specific cls method but it can give access to every class method present in program.
+it won't take self and cls as first parameter
+can be called using the cls name or object
+helper function
+
+
+difference between static, class and object level methods...
+
+object level method:
+methods are functions defined inside a class that operate on object data.
+take self as first parameter
+it is used when method needs to access or modify variables
+
+class level methods:
+A class method is a method that works on the class itself, not on instances.
+It is defined using the @classmethod and takes cls.
+it uses cls as first parameter
+
+static level methods:
+static method won't depend on class or object data
+uses @staticmethod as decorator
+it helps in class method but does not depend.
+
+
+

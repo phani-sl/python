@@ -1,0 +1,16 @@
+
+1. What is an object or instance attributes, methods. How do you create an object attributes, methods. How do you access them.
+2. What is a class attributes, methods. How do you create a class attributes, methods. How do you access them.
+3. Create a class and object level methods and attributes for mentioned classes.
+    1. Laptop
+    2. Mobile
+    3. Sun
+    4. Moon
+    5. File
+    6. Mouse
+    7. Bottle
+    8. MicroChip
+    9 XYZ,... etc
+4. What is the difference between a class and object level attributes and methods.
+5. What are static methods? What is the use of it.
+6. What is the difference b/w static, class and object level methods.
