@@ -35,5 +35,3 @@ laptop2.show_specs()
 print("Category Name:", Laptop.category)  # Accessing class variable
 
 print("Electronics")
-
-
