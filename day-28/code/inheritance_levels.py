@@ -109,4 +109,3 @@ d.show()     # Inherited from class A via B or C
 d.show_b()
 d.show_c()
 d.show_d()
-
