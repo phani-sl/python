@@ -1,0 +1,8 @@
+1. What is inheritance. How can we achieve in Python.
+2. What is the use of inheritance
+3. Write down many examples on inheritance.
+4. What are the different types of inheritance.
+5. Please write down multiple examples with definitions for all the types.
+6. Please go through about static, class and object level methods.
+7. What is the difference of pre single underscore and pre double underscore methods or properties in Python. 
+8. Please go through about OOPS concepts those are Method Overriding, Polymorphism, Abstraction.
