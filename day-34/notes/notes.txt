@@ -1,0 +1,31 @@
+1. How can you restrict the access level of members in a class. What are those levels and how do you achieve this. Write multiple examples for each access level.
+    In python we restrict the access level of members in a class using naming conventions set of rules or guidelines.
+There are 3 access levels.
+    1. Public Members
+    2. Private Members
+    3. Protected Members
+
+    1. Public Members
+        No underscore before the name.
+        Can be accessed from anywhere.
+
+    2. Private Members
+        Use a single underscore _ before the name.
+        Can be accessed in class and subclass.
+
+    3. Protected Members
+        Use double underscore __ before the name.
+        Only accessible within the class.
+
+
+2. What is encapsulation in Python. Write multiple examples of it .
+    Encapsulation means hiding the internal details of how something works and only showing what is necessary.
+It helps protect data and keeps it safe from unwanted changes.
+
+
+3. What is an exception in Python. Write some example programs which ends the execution with an exception.
+    An exception in Python is an error that occurs during the execution of a program, which disrupts the normal flow of the program.
+    
+
+4. How can you handle the exceptions in Python. Write multiple examples for it.
+    In Python, exceptions are handled using the try, except, else, and finally blocks.

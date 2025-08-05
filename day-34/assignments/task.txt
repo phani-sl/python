@@ -1,0 +1,4 @@
+1. How can you restrict the access level of members in a class. What are those levels and how do you achieve this. Write multiple examples for each access level.
+2. What is encapsulation in Python. Write multiple examples of it .
+3. What is an exception in Python. Write some example programs which ends the execution with an exception.
+4. How can you handle the exceptions in Python. Write multiple examples for it.
