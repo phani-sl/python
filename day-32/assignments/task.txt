@@ -1,0 +1,8 @@
+1. What is an abstract class? How do you create  a abstract class. Write multiple example on it.
+2. What is a concrete class? How do you create these classes. Write multiple examples on this.
+3. What is a concrete method? How do you create these methods. Write multiple examples on this.
+4. What is a abstract method? How do you create these methods. Write multiple examples on this.
+5. Can I create an abstract class which is holding concrete methods. If yes/No why and How.
+6. Can I instantiate an abstract class which is holding abstract methods. If yes/No why and How.
+7. Can I instantiate an abstract class which is holding concrete methods. If yes/No why and How.
+8. Can I instantiate an abstract class which is not holding abstract methods. If yes/No why and How.
