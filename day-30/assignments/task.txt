@@ -1,0 +1,7 @@
+1. Write multiple programs on each inheritance with the explanation. (At least for each inheritance 5 programs)
+2. What is Method Resolution in Python? Where does this occurs? Give an examples on this.
+3. What is Polymorphism? How many types of Polymorphism in Python.
+4. Give a depth explanation on each Polymorphism? Write at least 5 examples for each one.
+5. Does Python supports Compile time Polymorphism? If YES/NO Why?
+6. What is Method overloading ? Does it come under Runtime or Compile time polymorphism? How.
+7. What do you mean by Runtime Polymorphism? What are the ways to achieve this in Python.
