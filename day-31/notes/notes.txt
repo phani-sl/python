@@ -1,0 +1,9 @@
+list
+a list is a mutable, ordered collection of items that can hold elements of any data type.
+ (integers, strings, floats, other lists, etc.).
+
+syntax:
+list_name = [element1, element2, element3, ...]
+
+
+
