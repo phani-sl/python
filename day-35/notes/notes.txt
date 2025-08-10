@@ -1,0 +1,38 @@
+1. How can I rethrow the exception? Write multiple use cases with examples.
+    Using try except block and then raising it again—either the same exception or a new one, we can rethrow the exception.
+    --------
+    --------
+    try:
+        --------
+        --------
+    except {---}:
+        --------
+        raise-----
+
+2. How can I create an exception object? And how can I throw exception? Write multiple examples.
+    In Python, exceptions are objects that represent errors that occur during program execution. 
+    You can create an exception object using the class of an exception (like ValueError, TypeError, or even custom ones), 
+    and you can throw (raise) an exception using the raise keyword.
+
+3. What is finally. use of it.
+    The finally block in Python is used in exception handling to define a block of code that will always be executed, 
+    no matter what — whether an exception occurs or not.
+
+4. Can I have else block followed by try-except. if yes how and why. Write multiple examples.
+    Yes, in Python, you can have an else block after a try-except block.
+    Works:
+    The else block runs only if no exception occurs in the try block. 
+    If an exception is raised and caught by the except, the else block is skipped.
+    Syntax:
+    try:
+         # Code that might raise an exception
+    except SomeException:
+         # Code to handle the exception
+    else:
+        # Code that runs if NO exception occurred
+
+Why use else?
+Using else helps you separate:
+Code that might raise exceptions (try)
+Error handling (except)
+Code that should run only when everything goes fine (else)

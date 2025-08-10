@@ -1,0 +1,4 @@
+1. How can I rethrow the exception? Write multiple use cases with examples.
+2. How can I create an exception object? And how can I throw exception? Write multiple examples.
+3. What is finally. use of it.
+4. Can I have else block followed by try-except. if yes how and why. Write multiple examples.
