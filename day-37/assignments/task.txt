@@ -1,0 +1,5 @@
+1. How can I create a custom exception. Write multiple examples on it.
+2. Can I raise a Object which is not a type of BaseException. Write multiple examples on it.
+3. What is the use of custom exceptions? How can it be created. Write down multiple examples on it.
+4. Can I hold multiple except blocks. If yes, how?
+5. If I am holding the except blocks with different kind of Exceptions, what shoild take care of and Why. Write a brief explaination on this and write multiple examples on it.
