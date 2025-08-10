@@ -1,0 +1,10 @@
+1. How can I rethrow the exception? Write multiple use cases with examples.
+2. How can I create an exception object? And how can I throw exception? Write multiple examples.
+3. What is finally. use of it.
+4. Can I have else block followed by try-except. if yes how and why. Write multiple examples.
+5. What are the rules for having except, finally, else blocks followed by try block. Write multiple examples.
+6. What is unreachable statement? Write an example on it and explain what happens when I have.
+7. What is the base class of Exceptions in Python. 
+8. What are the different types of Exceptions in Python.
+9. How can I create a custom exception. Write multiple examples on it.
+10. Can I raise a Object which is not a type of BaseException. Write multiple examples on it.
