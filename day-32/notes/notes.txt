@@ -1,0 +1,104 @@
+An abstract class is a class that cannot be instantiated directly.
+It is designed to be a blueprint for other classes.
+It may contain:
+Abstract methods → methods declared but not implemented (only method signatures)
+Concrete methods → normal methods with implementation
+Purpose:
+They force child classes to implement certain methods, ensuring a consistent interface.
+
+Python’s abc module (Abstract Base Classes) is used.
+Steps:
+Import ABC and abstractmethod from abc module.
+Inherit from ABC to make a class abstract.
+Use @abstractmethod decorator to define abstract methods.
+Any class that inherits it must implement those abstract methods, or else it also becomes abstract.
+
+basic syntax:
+from abc import ABC, abstractmethod
+
+class MyAbstractClass(ABC):
+
+    @abstractmethod
+    def my_method(self):
+        pass
+
+    def concrete_method(self):
+        print("This is a normal method.")
+
+
+A concrete class is a normal class in Python that has:
+A complete implementation (no unimplemented/abstract methods).
+Objects (instances) can be created directly from it.
+It can have methods, attributes, constructors, etc.
+It can also inherit from other classes, including abstract classes — but only if it implements all abstract methods.
+In short:
+If you can do obj = MyClass() without errors, it’s a concrete class
+
+creation
+class MyConcreteClass:
+    def greet(self):
+        print("Hello from a concrete class!")
+
+obj = MyConcreteClass()
+obj.greet()
+
+A concrete method is a method in a class that has a full implementation — meaning it contains both:
+A method definition (name, parameters, etc.)
+The method body (actual working code)
+It’s the opposite of an abstract method, which only has a declaration and no implementation.
+
+You just define a method with a body (some logic inside) inside a class.
+No @abstractmethod decorator is used.
+
+
+An abstract method is a method that is declared but not implemented in a class.
+It only specifies what the method should do, but not how it does it.
+Key points:
+Abstract methods have no body (no implementation) in the base class.
+They must be implemented by subclasses; otherwise, the subclass will also be abstract and can’t be instantiated.
+In Python, abstract methods are created using the abc module (ABC and @abstractmethod).
+A class containing at least one abstract method becomes an abstract class.
+
+How to Create an Abstract Method in Python
+Import ABC and abstractmethod from abc module.
+Make the class inherit from ABC.
+Decorate the method with @abstractmethod.
+
+Yes we can create an abstract class that contains concrete methods.
+Why?
+Abstract classes are meant to provide a blueprint for other classes.
+They can contain:
+Abstract methods (methods without implementation — subclasses must override them)
+Concrete methods (fully implemented — subclasses can use them as-is or override them)
+
+This is useful when:
+You want common behavior to be reused by all subclasses (via concrete methods)
+You also want certain methods to be mandatory for subclasses to implement (via abstract methods)
+
+How in Python?
+We use the abc module:
+ABC → to declare an abstract class
+@abstractmethod → to declare abstract methods
+Concrete methods → just define normally in the abstract class
+
+No — you cannot directly instantiate an abstract class that contains abstract methods in Python.
+Here’s why:
+In Python, an abstract class (created using the abc module) is meant to serve as a blueprint for other classes.
+If it has abstract methods, it means the class is incomplete — it has methods declared but not implemented.
+Python enforces that you must implement all abstract methods in a subclass before you can create objects (instances).
+If you try to instantiate it directly, Python will raise a TypeError.
+
+No — you cannot instantiate an abstract class, even if it contains concrete (fully implemented) methods.
+Reason:
+An abstract class in Python is marked with the @abstractmethod decorator (from the abc module).
+Once a class has at least one abstract method (unimplemented method), it becomes incomplete by definition 
+— Python prevents you from creating an object from it until all abstract methods are overridden in a subclass.
+Concrete methods in an abstract class are perfectly valid, but they don’t change the fact that the class has unimplemented
+behavior, so direct instantiation is still not allowed.
+
+Yes — you can instantiate an abstract class if it does not have any abstract methods.
+Reason:
+In Python, an abstract class is simply a class that inherits from ABC (Abstract Base Class) in the abc module.
+It becomes non-instantiable only if it contains at least one abstract method (methods marked with @abstractmethod).
+If it doesn’t have any abstract methods, then it’s just a regular class that happens to inherit from ABC, 
+so you can create objects from it.
