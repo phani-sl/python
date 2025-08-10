@@ -1,0 +1,12 @@
+1. Find smallest number in a list.
+2. Find largest number in a list.
+3. Find second largest number in a list.
+4. Find second smallest number in a list.
+5. Find n`th largest number in a list.
+6. Find n`th smallest number in a list.
+7. Print even numbers in a list.
+8. Print odd numbers in a list.
+9. To count Even and Odd numbers in a list.
+10. To print positive numbers in a list.
+11. To print negative numbers in a list.
+12. To count positive and negative numbers in a list.
