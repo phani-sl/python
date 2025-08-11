@@ -7,8 +7,6 @@
 7. Can I instantiate an abstract class which is holding concrete methods. If yes/No why and How.
 8. Can I instantiate an abstract class which is not holding abstract methods. If yes/No why and How.
 9. Can I hold class level and static methods in an abstract class? If yes/no Why and how. Write multiple examples on this.
-10. Can I hold class level and Object properties(variables) in an abstract class? If yes/no Why and how.
-    Write multiple examples on this.
+10. Can I hold class level and Object properties(variables) in an abstract class? If yes/no Why and how. Write multiple examples on this.
 11. Can I hold __init__ method in abstract class? If yes/no Why and how. Write multiple examples on this.
-12. How does it work if I am having an __init__ method in abstract class and concrete class which is extending abstract class.
-    Explain with an example.
+12. How does it work if I am having an __init__ method in abstract class and concrete class which is extending abstract class.Explain with an example.

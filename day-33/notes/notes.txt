@@ -1,0 +1,46 @@
+Yes we can hold both class methods and static methods inside an abstract class in Python.
+The reason is:
+In Python, an abstract class is just a class derived from abc.ABC that may (or may not) have abstract methods.
+Static methods and class methods are simply callable members of a class, 
+and their existence doesn’t depend on whether the class is abstract or concrete.
+The only restriction is: you cannot directly instantiate an abstract class that has abstract methods. 
+But you can still define and use static/class methods in it.
+
+Yes we can hold both class-level variables and object (instance) properties in an abstract class.
+Why?
+An abstract class in Python is still a normal Python class — it can store:
+Class-level variables (shared by all objects of the class and subclasses).
+Instance variables (unique to each object, created inside __init__ or another method).
+The only thing that makes it “abstract” is that it inherits from abc.ABC and may contain @abstractmethods 
+— which prevent direct instantiation until implemented in a subclass.
+
+Yes we can have an __init__ method in an abstract class in Python.
+Why?
+An abstract class in Python (created using abc.ABC) can contain concrete (fully implemented) methods, and __init__ is just a special 
+concrete method for initializing instance variables.
+Even if a class is abstract (because it has at least one abstract method), 
+it can still define its constructor to set up state or enforce certain initialization requirements for its subclasses.
+Subclasses will call this __init__ method automatically when instantiated (unless they override it).
+
+Rules
+If you only define __init__ (and no abstract methods), the class is not truly abstract — it can be instantiated directly.
+If you define __init__ along with abstract methods, the class becomes abstract 
+— you cannot instantiate it until the subclass implements all abstract methods.
+__init__ can be overridden in child classes to extend or modify initialization.
+
+When you have an __init__ method in both:
+An abstract class (parent)
+A concrete class (child)
+
+how it works:
+Abstract class can have an __init__
+Even though you cannot instantiate an abstract class directly, you can define an __init__ method inside it.
+This method will run when a subclass calls super().__init__().
+
+Concrete subclass’s __init__ runs first
+When you create an object of the concrete class, Python will first execute that class’s __init__.
+If you explicitly call super().__init__() inside it, the parent’s __init__ will also run.
+If you don’t call super().__init__(), the abstract class’s __init__ won’t execute.
+
+The child can override and extend the parent’s initialization
+This is useful when the abstract class sets up common properties and the subclass adds extra properties.
