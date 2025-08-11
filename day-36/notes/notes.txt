@@ -1,0 +1,164 @@
+1. How can I rethrow the exception? Write multiple use cases with examples.
+    Using try except block and then raising it again—either the same exception or a new one, we can rethrow the exception.
+    --------
+    --------
+    try:
+        --------
+        --------
+    except {---}:
+        --------
+        raise-----
+
+2. How can I create an exception object? And how can I throw exception? Write multiple examples.
+    In Python, exceptions are objects that represent errors that occur during program execution. 
+    You can create an exception object using the class of an exception (like ValueError, TypeError, or even custom ones), 
+    and you can throw (raise) an exception using the raise keyword.
+
+3. What is finally. use of it.
+    The finally block in Python is used in exception handling to define a block of code that will always be executed, 
+    no matter what — whether an exception occurs or not.
+
+4. Can I have else block followed by try-except. if yes how and why. Write multiple examples.
+    Yes, in Python, you can have an else block after a try-except block.
+    Works:
+    The else block runs only if no exception occurs in the try block. 
+    If an exception is raised and caught by the except, the else block is skipped.
+    Syntax:
+    try:
+         # Code that might raise an exception
+    except SomeException:
+         # Code to handle the exception
+    else:
+        # Code that runs if NO exception occurred
+
+Why use else?
+Using else helps you separate:
+Code that might raise exceptions (try)
+Error handling (except)
+Code that should run only when everything goes fine (else)
+
+Rules for try, except, else, finally
+try is mandatory — it must always start the block.
+At least one except or finally is required —
+You cannot have a try without either an except or a finally.
+else is optional — but it must appear after all except blocks and before finally.
+Order is strict:
+
+try
+    ...
+except <ErrorType>:
+    ...
+except <ErrorType>:
+    ...
+else:
+    ...
+finally:
+    ...
+
+Multiple except blocks are allowed — to handle different exceptions separately.
+At most one else and one finally — you cannot have two else or two finally blocks.
+else runs only if the try block does not raise any exception.
+finally always runs — whether an exception occurred or not (even if there's a return in try or except).
+
+An unreachable statement in Python is a line of code that will never be executed, 
+no matter what happens during the program’s run.
+This usually occurs because control flow makes it impossible to reach that line 
+— for example, when it appears after a return, raise, break, continue, or sys.exit() statement.
+
+Python executes print("Before return").
+The return 42 sends control back to the caller immediately.
+The print("After return") is never executed — it’s unreachable.
+Python does not throw an error for this, but linters like pylint will warn you about it.
+
+In Python, the base class of all built-in exceptions is BaseException.
+BaseException → The root of Python’s exception hierarchy.
+Common subclasses:
+Exception → Base class for most user-defined and built-in non-system-exiting exceptions.
+SystemExit, KeyboardInterrupt, GeneratorExit → Direct subclasses of BaseException that are not derived from Exception.
+
+ValueError → inherits from Exception
+Exception → inherits from BaseException
+
+BaseException catches everything, including system-exiting exceptions like SystemExit and KeyboardInterrupt.
+Usually, you catch Exception instead of BaseException — to avoid intercepting signals that should terminate the program.
+In custom exceptions, it’s standard practice to inherit from Exception, not BaseException.
+
+8. What are the different types of Exceptions in Python.
+system-exiting exceptions, standard runtime exceptions, and custom exceptions.
+
+Common Built-in Exception Types:
+
+A. System-exiting exceptions (inherited directly from BaseException)
+
+SystemExit → Raised by sys.exit().
+KeyboardInterrupt → Raised when the user presses Ctrl+C.
+GeneratorExit → Raised when a generator/iterator is closed.
+
+B. Standard exceptions (inherited from Exception)
+
+1. Arithmetic-related
+ArithmeticError (base class)
+ZeroDivisionError → Division/modulo by zero.
+OverflowError → Result too large to represent.
+FloatingPointError → Floating-point operation failed.
+
+2. Lookup-related
+LookupError (base class)
+IndexError → Index out of range in sequence.
+KeyError → Key not found in dictionary.
+3. Name/Attribute related
+NameError → Variable not defined.
+UnboundLocalError → Local variable referenced before assignment.
+AttributeError → Attribute reference or assignment failed.
+
+4. Type/Value related
+TypeError → Wrong type of argument.
+ValueError → Correct type but inappropriate value.
+UnicodeError (base for encoding/decoding issues)
+UnicodeEncodeError
+UnicodeDecodeError
+UnicodeTranslateError
+
+5. Import-related
+ImportError → Import failed.
+ModuleNotFoundError → Module does not exist.
+
+6. I/O-related
+OSError → Base for OS errors.
+FileNotFoundError
+PermissionError
+IsADirectoryError
+NotADirectoryError
+… many others.
+
+7. Assertion & Runtime
+AssertionError → Raised by assert statement.
+RuntimeError → Generic runtime error.
+RecursionError → Too deep recursion.
+
+8. Iteration-related
+StopIteration → Signals end of iterator.
+StopAsyncIteration → Signals end of async iterator.
+
+C. Custom Exceptions
+You can create your own exceptions by inheriting from Exception:
+
+class MyCustomError(Exception):
+    pass
+
+raise MyCustomError("Something custom went wrong")
+
+9. How can I create a custom exception. Write multiple examples on it.
+Creating a custom exception in Python means defining your own exception class — usually by inheriting from Exception (not from BaseException, unless you have a very specific reason).
+
+Basic Rules
+Inherit from Exception (recommended) or a subclass of it.
+Optionally define your own __init__ or __str__ to customize messages.
+Use raise to throw it.
+Use try...except to catch it.
+
+10. Can I raise a Object which is not a type of BaseException. Write multiple examples on it.
+In Python, you cannot raise an object that is not an instance or subclass of BaseException.
+
+If you try, Python will give you a TypeError saying something like:
+exceptions must derive from BaseException
