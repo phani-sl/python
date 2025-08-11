@@ -1,0 +1,58 @@
+1. How can I create a custom exception. Write multiple examples on it.
+
+A custom exception is just a new class you create that inherits from Exception (or any subclass of BaseException).
+The idea is to make your error messages more descriptive and specific to your application, rather than relying only on built-in exceptions like ValueError or TypeError.
+
+Rules for Creating a Custom Exception
+Inherit from Exception (or a subclass) — never directly from BaseException unless you have a very special case.
+Name it meaningfully, ending with "Error" or "Exception" (convention).
+Optionally, define __init__ to accept extra parameters.
+Raise it using raise.
+Handle it with try-except.
+
+2. Can I raise a Object which is not a type of BaseException. Write multiple examples on it.
+
+In Python, you cannot raise an object that is not a subclass of BaseException.
+This is because the raise statement expects either:
+An instance of a class that inherits from BaseException, or
+A subclass of BaseException itself (which Python will instantiate automatically).
+If you try to raise something that’s not a BaseException type (e.g., int, str, list, dict), Python will throw a TypeError.
+
+3. What is the use of custom exceptions? How can it be created. Write down multiple examples on it.
+
+A custom exception is a user-defined error type that you create by inheriting from Python’s built-in Exception class (or another subclass of BaseException).
+They are useful because they:
+Improve code readability – The name of the exception clearly indicates the specific error type.
+Provide more precise error handling – You can catch only specific exceptions instead of using a generic except Exception.
+Make debugging easier – Custom exceptions can carry extra information relevant to your application.
+Support domain-specific errors – Example: InvalidTransactionError in a banking app.
+
+How to Create a Custom Exception
+Define a new class that inherits from Exception.
+Optionally, define an __init__ method to store additional details.
+Use the raise keyword to throw the exception.
+
+4. Can I hold multiple except blocks. If yes, how?
+
+Yes, In Python, you can have multiple except blocks for a single try block.
+Purpose:
+Multiple except blocks let you handle different types of exceptions differently.
+Syntax:
+try:
+    # Code that may raise exceptions
+except ExceptionType1:
+    # Handle ExceptionType1
+except ExceptionType2:
+    # Handle ExceptionType2
+...
+except ExceptionTypeN:
+    # Handle ExceptionTypeN
+
+5. If I am holding the except blocks with different kind of Exceptions, 
+what should take care of and Why. Write a brief explaination on this and write multiple examples on it.
+
+When you have multiple except blocks with different kinds of exceptions,
+we should be check the order.
+
+Key Points:
+Python checks except blocks top to bottom and runs the first one that matches.
