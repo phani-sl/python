@@ -1,0 +1,48 @@
+
+Inheritance in Python:
+    Inheritance is used to aquire properties and methods from another class.
+
+Achieving inheritance in Python:
+    using class definitions 
+
+class Parent:
+    def __init__(self):
+        self.name = "PARENT"
+
+    def display_info(self):
+        print("Parent Name: ", self.name)
+
+
+class Child(Parent):
+    def __init__(self):
+        super().__init__()
+        print("Child class initialized.")
+
+    def child_info(self):
+        print("Accessing Child class info:")
+
+child =Child() # Child object will be aquired properties and methods of Parent class And then child object will be created.
+print("Child Name: ", child.name)  # Accessing Parent class attribute
+child.child_info()
+child.display_info()  # Accessing Parent class method
+
+
+
+Uses of Inheritance in Python:
+    code can be used again and again, there's no need of writing code again and again.
+    we can extend the code without doing any changes.
+    clean and structured code.
+    represent relationships in code.
+
+
+
+1. Inheritance is used to aquired properties and methods from another class.
+2. Child class can access attrributes and methods of Parent class.
+3. No individual objects will be created for Parent class.
+4. Child object will be aquired properties and methods of Parent class And then child object will be created.
+5. If the Parent and Child clases having __init__ methods, then the parent class __init__ method will not be called automatically.
+6. So, the init method of Parent class should be called explicitly using super() function.
+7. If you need to have initialization of Parent class attributes in child class,
+   you need to explicitly call the Parent class's `__init__` method using `super()`.
+
+   

@@ -1,0 +1,4 @@
+
+1. What is inheritance. How can we achieve in Python.
+2. What is the use of inheritance.
+3. Write down many examples on inheritance.
