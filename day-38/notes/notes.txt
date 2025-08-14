@@ -1,0 +1,29 @@
+1. Can we catch multiple types of exceptions using single except? if yes how? Write multiple examples on it.
+    Yes, we can catch multiple types of exceptions using single except.
+    we must use parentheses () to group the exception types.
+
+2. What are the dunder methods. What is the use of them.
+    Dunder methods (short for "double underscore methods") are special methods in Python whose names start and 
+    end with double underscores.
+    Automatically runs when an object is created; sets up initial attributes.
+    Control what gets printed when the object is displayed.
+    Make your objects work with ==
+
+3. What __init__, __str__, __repr__ and __eq__ methods. Write multiple examples for each one of them with the explaination.
+    1. __init__ – Object Initializer
+        Called automatically when a new object is created.
+        Sets up initial attributes for the object (like a constructor in other languages)
+        __init__ runs right after the object is created and stores the provided values in instance variables.
+
+    2. __str__
+        Defines what str(obj) should display.
+        Gives a readable output.
+        Without __str__, Python prints the default memory address.
+
+    3. __repr__
+        Returns a string that should describe the object.
+
+    4. __eq__
+        Defines how == works between objects.
+        Compares object attributes instead of memory addresses.
+        Without __eq__, == compares memory addresses, so two objects with same values would still be considered different.
