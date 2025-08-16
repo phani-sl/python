@@ -1,6 +1,7 @@
 1. Can we catch multiple types of exceptions using single except? if yes how? Write multiple examples on it.
     Yes, we can catch multiple types of exceptions using single except.
     we must use parentheses () to group the exception types.
+    This is useful when you want to handle different exceptions in the same way without repeating code.
 
 2. What are the dunder methods. What is the use of them.
     Dunder methods (short for "double underscore methods") are special methods in Python whose names start and 
