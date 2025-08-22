@@ -1,0 +1,5 @@
+1. What is a Process. Give a brief explaination.
+2. What is a Thread. How can I create a Thread. Write all the ways of creating a Thread.
+3. What are the different properties that I can set for a Thread. List down them and write examples on them.
+4. How can I start a Thread. and How can I get to know the thread name,.
+5. What is Main thread.  How can I make a main thread to wait for child threads to complete their execution. Write examples on them.

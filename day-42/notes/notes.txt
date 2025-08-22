@@ -1,0 +1,124 @@
+1. What is a Process. Give a brief explaination.
+Process in Python 
+A process is a program in execution. It is an independent unit that has its own memory space, system resources, and execution flow.
+When you run a Python program (e.g., python mycode.py), the operating system creates a process for it.
+
+Key Points about a Process
+Independent Execution → A process runs independently, separate from other processes.
+Memory Allocation → Each process gets its own memory (code, data, heap, stack).
+Resources → It may use CPU time, files, I/O devices, etc.
+Process ID (PID) → Every process has a unique identifier assigned by the OS.
+Concurrency → Multiple processes can run at the same time (parallel execution).
+
+A process = a running program with its own memory and resources, managed by the OS.
+
+
+2. What is a Thread. How can I create a Thread. Write all the ways of creating a Thread.
+A thread is the smallest unit of execution within a process.
+A process can contain one or multiple threads.
+All threads of a process share the same memory space (unlike processes which have independent memory).
+Threads are useful for performing tasks concurrently (like downloading files, handling user input, background tasks).
+
+Example: A web browser runs as a process, and inside it:
+One thread renders the page,
+Another handles user clicks,
+Another downloads files in the background.
+
+How to Create a Thread in Python?
+Python provides two main ways to create threads:
+Using threading.Thread() (recommended)
+Extending the Thread class
+
+Process → independent execution unit, has its own memory.
+Thread → lightweight execution unit inside a process, shares memory.
+
+Ways to Create Threads in Python:
+threading.Thread(target=function)
+threading.Thread(target=function, args=(...))
+Extending Thread class and overriding run()
+Using Daemon threads
+
+
+3. What are the different properties that I can set for a Thread. List down them and write examples on them.
+In Python, when we create a thread using the threading module, we can configure certain properties (attributes) before or after starting the thread.
+
+Properties of a Thread
+Here are the most commonly used ones:
+    name → A label for the thread (default: Thread-1, Thread-2, etc.).
+    ident → A unique identifier for the thread (assigned after thread starts).
+    is_alive() → Tells whether the thread is currently running.
+    daemon → Boolean property that decides if a thread runs in background (default: False).
+    Daemon thread ends when the main program ends.
+    native_id (Python 3.8+) → The thread’s native integral ID assigned by the OS.
+    start() → Starts the thread.
+    join(timeout) → Waits until the thread finishes (optional timeout).
+    run() → The method executed when the thread starts (used in subclassing).
+
+
+4. How can I start a Thread. and How can I get to know the thread name,.
+1. How to Start a Thread
+In Python, a thread is created using threading.Thread() and started with the start() method.
+Example:
+
+import threading
+def worker():
+    print("Thread is running...")
+
+# Create a Thread
+t = threading.Thread(target=worker)
+
+# Start the Thread
+t.start()
+
+# Wait for thread to finish
+t.join()
+
+
+t.start() → begins the execution of the worker() function in a new thread.
+t.join() → makes the main thread wait until the worker thread completes.
+
+
+2. How to Get the Thread Name
+
+Every thread has a name property (default: "Thread-1", "Thread-2", etc.).
+We can:
+Set a custom name while creating a thread → Thread(name="MyThread")
+Get the current thread’s name → threading.current_thread().name
+Get another thread’s name → t.name
+Example:
+
+import threading
+
+def worker():
+    print(f"Current thread running: {threading.current_thread().name}")
+
+# Create a Thread with a custom name
+t = threading.Thread(target=worker, name="CustomWorkerThread")
+
+t.start()
+t.join()
+
+# Get thread name from object
+print("Thread object name:", t.name)
+
+Start a Thread → t.start()
+Get Thread Name →
+t.name (from thread object)
+threading.current_thread().name (from inside thread function)
+
+
+5. What is Main thread.  How can I make a main thread to wait for child threads to complete their execution. Write examples on them.
+1. What is Main Thread?
+When you run a Python program, the interpreter automatically creates a main thread.
+This main thread executes your program’s code.
+Any child threads you create (threading.Thread) run under this main thread.
+If the main thread exits, all non-daemon child threads will continue until they finish.
+
+2. How to Make Main Thread Wait for Child Threads?
+We use the .join() method.
+t.join() → makes the main thread wait until the child thread t finishes execution.
+Without join(), the main thread may finish early (before child threads complete).
+
+Main thread → default thread created when a Python program starts.
+Child threads → user-created threads running alongside the main thread.
+Make main thread wait → use .join() on each child thread.
