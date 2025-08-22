@@ -1,0 +1,11 @@
+1. What is a module? What is the use of it.
+Module is nothing but a file which contains any instruction likewise methods, variables, classes, statements.
+A module is a file that contains Python code (functions, classes, or variables).
+Used to make code reusable, organized, and easy to maintain.
+
+Modules are used for:
+Code Reusability – Write code once and use it in multiple programs.
+Organizing Code – Helps break large programs into smaller, manageable files.
+Readability & Maintainability – Easier to debug and maintain.
+Built-in Functions – Many modules come with Python (like math, datetime, os), so we don’t need to write everything from scratch.
+
