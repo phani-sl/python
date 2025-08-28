@@ -1,0 +1,12 @@
+1. What is ThreadPoolExecutor? What is the use of it. Write multiple examples on this. 
+
+What is ThreadPoolExecutor?
+ThreadPoolExecutor is a class in Python’s concurrent.futures module that provides a high-level interface for managing threads.
+Instead of manually creating and managing threads, you can use ThreadPoolExecutor to submit tasks (functions) that run in parallel.
+It manages a pool of worker threads and reuses them, which makes it efficient compared to creating a new thread for every task.
+
+Uses:
+Simplifies multithreading (no need to create and manage threads manually).
+Efficient resource use (reuses threads instead of creating new ones every time).
+Supports asynchronous execution (you can submit tasks and check results later).
+Scales well when you have many small tasks (like network requests, file I/O).
