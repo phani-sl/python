@@ -1,0 +1,28 @@
+1. What is Daemon Thread? How do you create it.
+
+Daemon Thread:
+A daemon thread is a thread that runs in the background and stops automatically when the main program exits.
+You use it for background tasks like logging, monitoring, or cleanup.
+
+
+2. What are the differences b/w a normal thread to daemon thread.
+
+Normal Thread:
+
+It performs the main tasks of a program.
+The program waits for it to finish before exiting.
+It runs until its task is complete, no matter how long it takes.
+Created normally:
+
+thread = threading.Thread(target=task)  # default is non-daemon
+
+Daemon Thread:
+
+It runs in the background to perform helper tasks like logging or monitoring.
+The program does not wait for it; it stops automatically when all normal threads finish.
+It can be terminated abruptly if the main program ends, even if the task is not finished.
+Created by setting it as daemon:
+
+thread = threading.Thread(target=task)
+thread.daemon = True
+
