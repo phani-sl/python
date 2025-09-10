@@ -1,0 +1,162 @@
+1. What is Database? What are the different databases available in the market.
+
+1. What is a Database?
+A database is an organized collection of data that can be easily accessed, managed, and updated.
+It is stored electronically in a computer system and is managed by a Database Management System (DBMS).
+A DBMS provides tools to store, retrieve, and manipulate data efficiently.
+It ensures data integrity, security, concurrency, and recovery.
+
+Example: A student management system database stores student details, marks, attendance, etc., so they can be queried whenever needed.
+
+2. Different Types of Databases Available in the Market
+Databases are categorized into different types, and within each type, there are popular tools/software.
+(A) Relational Databases (RDBMS)
+Store data in tables (rows and columns).
+Use SQL (Structured Query Language).
+
+Examples:
+Oracle Database
+MySQL
+Microsoft SQL Server
+PostgreSQL
+IBM Db2
+MariaDB
+
+(B) NoSQL Databases
+Designed for unstructured, semi-structured, and large-scale data.
+Flexible schema and high scalability.
+Types: Key-Value, Document, Column-based, Graph.
+
+Examples:
+MongoDB (Document)
+Cassandra (Column)
+Redis (Key-Value)
+CouchDB (Document)
+Neo4j (Graph)
+Amazon DynamoDB
+
+
+2. What are the types of databases. Define them
+
+Types of Databases & Their Definitions
+1. Relational Database (RDBMS)
+Definition: A relational database stores data in tables (rows and columns). Each row represents a record, and columns represent attributes. Data is accessed using SQL (Structured Query Language).
+Examples: Oracle, MySQL, PostgreSQL, SQL Server.
+Use Case: Banking systems, ERP, student management systems.
+
+2. NoSQL Database
+Definition: A NoSQL (Not Only SQL) database is designed for unstructured, semi-structured, or large-scale data. It offers flexibility, scalability, and high performance.
+Types of NoSQL:
+Document-based → MongoDB, CouchDB
+Key-Value → Redis, DynamoDB
+Column-based → Cassandra, HBase
+Graph → Neo4j
+Use Case: Social media apps, IoT data, real-time analytics.
+
+
+3. What is SQL? Why do we need this.
+
+1. What is SQL?
+
+SQL (Structured Query Language) is a standard programming language used to manage and interact with databases.
+It is mainly used in Relational Databases (RDBMS) like Oracle, MySQL, PostgreSQL, SQL Server.
+SQL allows you to store, retrieve, update, and delete data in databases.
+It is also used for schema creation, access control, and transaction management.
+
+Example:
+
+SELECT name, marks FROM Students WHERE marks > 80;
+This query retrieves student names and marks of those who scored above 80.
+
+2. Why Do We Need SQL?
+We need SQL because:
+(A) Data Management
+Databases contain huge amounts of data.
+SQL provides a systematic and efficient way to manage it.
+
+(B) Easy to Use
+SQL uses simple English-like commands (SELECT, INSERT, UPDATE, DELETE).
+Anyone with basic knowledge can learn it quickly.
+
+(C) Standard Language
+SQL is a universal standard supported by almost all RDBMS (Oracle, MySQL, PostgreSQL, SQL Server, etc.).
+Learning SQL means you can work with any relational database.
+
+(D) Data Security & Integrity
+SQL provides user access control (GRANT, REVOKE).
+It maintains data integrity (using constraints like PRIMARY KEY, FOREIGN KEY).
+
+(E) Handling Big Data
+SQL can handle large-scale data efficiently.
+Essential for banking, e-commerce, healthcare, and enterprise applications.
+
+(F) Analytics & Reporting
+SQL is widely used in data analysis, business intelligence, and reporting tools (like Tableau, Power BI).
+Supports aggregation functions (SUM, COUNT, AVG, MAX, MIN).
+
+
+4. What are different categories of queries available in SQL. Define them.
+
+In SQL, queries are grouped into different categories based on their purpose.
+Categories of SQL Queries
+
+1. DDL (Data Definition Language)
+Definition: DDL queries are used to define and manage database structures (tables, schemas, indexes).
+Commands:
+CREATE → create a new database/table
+ALTER → modify table structure
+DROP → delete table/database
+TRUNCATE → delete all records but keep structure
+
+Example:
+CREATE TABLE Students (
+    RollNo INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Marks INT
+);
+
+2. DML (Data Manipulation Language)
+Definition: DML queries are used to manipulate (insert, update, delete) data inside tables.
+Commands:
+INSERT → add new data
+UPDATE → modify existing data
+DELETE → remove records
+
+Example:
+INSERT INTO Students (RollNo, Name, Marks)
+VALUES (101, 'Phani', 90);
+
+3. DQL (Data Query Language)
+Definition: DQL queries are used to fetch data from a database.
+Command:
+SELECT → retrieve data from tables
+
+Example:
+
+SELECT Name, Marks FROM Students WHERE Marks > 80;
+
+4. DCL (Data Control Language)
+Definition: DCL queries control user access and permissions to the database.
+Commands:
+GRANT → give access rights
+REVOKE → remove access rights
+
+Example:
+
+GRANT SELECT ON Students TO user1;
+
+5. TCL (Transaction Control Language)
+Definition: TCL queries manage transactions in a database to ensure consistency and rollback in case of errors.
+Commands:
+COMMIT → save changes permanently
+ROLLBACK → undo changes
+SAVEPOINT → create checkpoints within transactions
+
+Example:
+
+BEGIN;
+UPDATE Students SET Marks = Marks + 5 WHERE RollNo = 101;
+COMMIT;
+
+
+5. Install PostgreSQL and MySQL also.

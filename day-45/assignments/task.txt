@@ -1,0 +1,5 @@
+1. What is Database? What are the different databases available in the market
+2. What are the types of databases. Define them
+3. What is SQL? Why do we need this.
+4. What are different categories of queries available in SQL. Define them.
+5. Install PostgreSQL and MySQL also.
