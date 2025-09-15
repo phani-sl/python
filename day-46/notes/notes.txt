@@ -1,0 +1,38 @@
+
+If "sakila" by default, is not present under SCHEMAS in MySQL Workbench, Then follow these steps.
+Steps
+1. Create a database "sakila" in SCHEMAS in MySQL Workbench.
+2. Open the link provided in Teams Chat "https://dev.mysql.com/doc/index-other.html" . copy this and open link.
+3. Download zip files by clicking on "zip" for 
+    world database
+    sakila database
+    airportdb database
+    menagerie database
+4. After Completion of downloads. Select "sakila-db" in downloads
+5. Right click on it and click on Extract All, and Extract.
+6. Open File "sakila-db" and open sakila-db folder.
+7. Copy the Path
+8. Type cmd and Enter
+
+After Opening Command Prompt 
+Follow these steps
+1. mysql -u root -p
+2. Enter password(While created when You installed MySQL Workbench)
+3. Check for databases that you have or not These "sakila, world, airportdb, menagerie"
+To check Use 
+show databases;
+4. If they are not present then create a database
+To create Use
+create database sakila;
+    (Optional) 5. After this if you get any message like no database found then type
+    use sakila;
+
+6. Using the command given below
+"path of folder" like     C:\Users\slpha\Downloads\sakila-db\sakila-db
+    
+source C:\Users\slpha\Downloads\sakila-db\sakila-db\sakila-schema.sql
+
+repeat same command for all sql files present in sakila-db folder
+
+For now Only sakila database is completed.
+Repeat same From first line for "world, airportdb, menagerie"

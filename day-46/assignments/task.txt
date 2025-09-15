@@ -1,0 +1,6 @@
+1. What is select? What is the way to fetch the data from the table.
+2. How can I fetch only desired columns from a table.
+3. What is where clause in SQL? Where and Why do you use it.
+4. What is `and` and `or`? Where and how do you use them.
+
+Write for each one atleast 10 queries.
