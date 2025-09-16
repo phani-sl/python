@@ -1,0 +1,97 @@
+What is SELECT?
+SELECT is an SQL (Structured Query Language) statement used to retrieve data from one or more tables in a database.
+It allows you to fetch specific columns or all columns, apply conditions, sort results, and even combine data from multiple tables.
+
+Ways to Fetch Data from a Table
+(a) Fetch all data
+SELECT * FROM employees;
+➡ Retrieves all rows and columns from the employees table.
+
+(b) Fetch specific columns
+SELECT first_name, salary FROM employees;
+➡ Retrieves only the first_name and salary columns.
+
+(c) Fetch with condition (WHERE clause)
+SELECT * FROM employees
+WHERE salary > 50000;
+➡ Retrieves rows where salary is greater than 50,000
+
+
+If you want to fetch only the desired (specific) columns from a table, you simply list those column names in the SELECT statement instead of using *.
+Syntax
+SELECT column1, column2, column3, ...
+FROM table_name;
+
+Example
+
+Suppose you have a table called employees with the following columns:
+id, first_name, last_name, department, salary, hire_date
+
+Fetch only first name and salary
+SELECT first_name, salary FROM employees;
+
+
+Fetch only department and hire_date
+SELECT department, hire_dateFROM employees;
+
+
+Fetch id, first_name, and last_name of employees in IT department
+
+SELECT id, first_name, last_name FROM employees WHERE department = 'IT';
+
+
+What is WHERE clause in SQL?
+The WHERE clause is used in SQL to filter rows from a table based on a condition.
+It tells the database which rows should be retrieved (or updated, deleted) and which should not.
+Syntax
+SELECT column1, column2, ... FROM table_name WHERE condition;
+
+
+What are AND and OR in SQL?
+They are logical operators used inside the WHERE clause (or in conditions) to combine multiple conditions.
+AND → All conditions must be true.
+OR → At least one condition must be true.
+
+
+LIKE in SQL
+The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+It allows pattern matching instead of exact matching.
+Wildcard Characters in SQL
+
+When used with LIKE, we usually use these wildcards:
+
+Wildcard	Meaning	Example
+%	Represents 0 or more characters	'a%' → any string starting with a
+_	Represents exactly one character	'a_' → any string starting with a and one more character
+
+% → 0 or more characters
+-- Find employees whose name starts with 'A'
+SELECT * FROM Employees WHERE EmpName LIKE 'A%';
+
+-- Find employees whose name ends with 'e'
+SELECT * FROM Employees WHERE EmpName LIKE '%e';
+
+-- Find employees whose name contains 'an'
+SELECT * FROM Employees WHERE EmpName LIKE '%an%';
+
+
+_ → exactly one character
+-- Find employees whose name is 4 letters long
+SELECT * FROM Employees WHERE EmpName LIKE '____';
+
+-- Find employees whose name starts with 'D' and is 5 letters long
+SELECT * FROM Employees WHERE EmpName LIKE 'D____';
+
+-- Find employees whose second letter is 'a'
+SELECT * FROM Employees WHERE EmpName LIKE '_a%';
+
+
+If you want to get unique (non-duplicate) values from a column in SQL, you use the DISTINCT keyword.
+Syntax:
+SELECT DISTINCT column_name 
+FROM table_name;
+
+Multiple Columns with DISTINCT
+If you want unique combinations of values:
+SELECT DISTINCT Department, EmpName
+FROM Employees;

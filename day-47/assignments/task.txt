@@ -1,0 +1,8 @@
+1. What is select? What is the way to fetch the data from the table.
+2. how can I fetch only desired columns from a table.
+3. What is where clause in SQL? Where and Why do you use it.
+4. What is `and` and `or`? Where and how do you use them.
+5. What is like and wildcard characters? What is the use of them? Write multiple queries for each and every wildcard.
+6. How can I be able to get distinct values of a column from a table.
+7. Write some examples on not equal (!=) in mysql queries.
+Write for each one atleast 10 queries.
