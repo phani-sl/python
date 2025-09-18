@@ -1,0 +1,92 @@
+What is the NOT operator in SQL?
+The NOT operator is used to negate a condition.
+It returns records when the condition is FALSE.
+
+Using NOT with LIKE
+LIKE is used for pattern matching with wildcards (%, _).
+When combined with NOT, it excludes matching patterns.
+
+
+What is REGEXP in MySQL?
+REGEXP (or RLIKE, both same in MySQL) is used for pattern matching using regular expressions.
+Unlike LIKE (which only supports % and _), REGEXP supports advanced pattern matching such as character classes, ranges, repetition, anchors, etc.
+It returns rows where the column value matches the given regular expression
+
+
+What is ORDER BY clause?
+The ORDER BY clause in SQL is used to sort the result set of a query.
+Sorting can be done in ascending (ASC) or descending (DESC) order.
+By default, it is ASC (ascending).
+
+
+Restricting Results in SQL
+In SQL, if you don’t want all rows, but only a limited number of rows, you use the LIMIT clause.
+
+
+What is LIMIT in MySQL?
+In MySQL, LIMIT is used to restrict the number of rows returned by a query.
+Mostly used to display Top N records or to paginate results.
+Can be combined with WHERE (filtering) and ORDER BY (sorting)
+
+
+What is GROUP BY clause?
+The GROUP BY clause in SQL is used to arrange identical data into groups.
+It is mostly used with aggregate functions like:
+COUNT() → counts rows
+SUM() → adds values
+AVG() → average values
+MAX() → highest value
+MIN() → lowest value    
+
+Why/Where do you use GROUP BY?
+You use it when you want summarized results instead of raw rows.
+
+Examples where GROUP BY is useful:
+Find number of students per class
+Find total salary per department
+Find average marks per subject
+Find highest sale per region
+
+
+What are Functions in SQL?
+In SQL, functions are predefined operations that perform calculations, transform data, or return specific information.
+They take inputs (arguments), process them, and return a result.
+Types of SQL Functions
+(a) Aggregate Functions → Work on a group of rows and return a single result
+COUNT() → counts rows
+SUM() → adds values
+AVG() → finds average
+MAX() → finds highest value
+MIN() → finds lowest value
+
+Scalar Functions → Work on individual values and return a single result per row
+UPPER() → converts text to uppercase
+LOWER() → converts text to lowercase
+LENGTH() → returns length of string
+ROUND() → rounds a number
+NOW() → returns current date & time
+
+Date and Time Functions
+NOW() → current date and time
+CURDATE() → current date
+CURTIME() → current time
+YEAR(date), MONTH(date), DAY(date) → extract parts of a date
+
+String Functions
+CONCAT(a, b) → joins strings
+SUBSTRING(str, start, length) → extracts part of string
+TRIM() → removes spaces
+
+Mathematical Functions
+ROUND() → rounds a number
+FLOOR() → largest integer ≤ value
+CEIL() → smallest integer ≥ value
+MOD(a, b) → remainder after division
+
+Why do we use Functions in SQL?
+
+To simplify queries (no need to write complex logic manually)
+To perform calculations directly in queries
+To summarize large data (e.g., totals, averages)
+To format data (e.g., uppercase names, formatted dates)
+To improve productivity (ready-made formulas save time)

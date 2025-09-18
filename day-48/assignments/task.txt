@@ -1,0 +1,7 @@
+1. What is NOT operator. Write queries in the combo of like and equal.
+2. What is regexp? How do you use it in mysql.
+3. What is order by clause? Write multiple queries in the combination of where clause.
+4. How do you restrict the results to get desired count? 
+5. What is limit in mysql? Write multiple queries in the combo of Where and order by clause.
+6. What is group by cluase? Where do you use them
+7. What are functions in sql? How and why do you use them. 
