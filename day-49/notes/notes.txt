@@ -1,0 +1,37 @@
+1. What is group by cluase? Where do you use them.
+The GROUP BY clause in SQL is used to arrange identical data into groups.
+It is usually combined with aggregate functions like COUNT(), SUM(), AVG(), MAX(), or MIN() to perform calculations on each group of data.
+Definition:
+GROUP BY groups rows that have the same values in specified columns into summary rows.
+Where do we use GROUP BY?
+When you want to summarize data.
+When you need to calculate totals, averages, counts, etc. for groups.
+Used in reports, analytics, and data summaries.
+
+
+2. What are functions in sql? How and why do you use them. 
+What are Functions in SQL?
+In SQL, functions are predefined (built-in) operations that take input (arguments), perform a task, and return a single value or result.
+They are used to manipulate data, perform calculations, format values, and extract useful information.
+
+Types of SQL Functions
+1. Aggregate Functions
+Work on a set of rows and return a single result.
+Examples:
+COUNT() → counts rows
+SUM() → adds values
+AVG() → average
+MAX() → maximum value
+MIN() → minimum value
+2. Scalar Functions
+Work on each row individually and return a single value per row.
+Examples:
+String functions → UPPER(), LOWER(), LENGTH(), CONCAT()
+Numeric functions → ROUND(), ABS(), POWER()
+Date functions → NOW(), CURDATE(), MONTH(), YEAR()
+
+Why do we use them?
+To simplify calculations (e.g., total sales = SUM(amount)).
+To format data (e.g., make names uppercase).
+To analyze data (e.g., average marks, count of employees per department).
+To manipulate strings/dates easily.

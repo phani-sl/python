@@ -1,0 +1,3 @@
+1. What is group by cluase? Where do you use them.
+2. What are functions in sql? How and why do you use them. 
+3. Write queries on Group By with Having, Where clause and Aggreate Functions. At least 50+ Queries.
