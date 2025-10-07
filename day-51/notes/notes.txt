@@ -1,0 +1,19 @@
+What are the built in functions available in SQL. Write the explaination with the example queries on each one of them.
+
+1. What are Built-in Functions in SQL?
+Built-in functions in SQL are predefined functions provided by the database system to perform specific operations — such as:
+Calculations
+String manipulation
+Date and time processing
+Data aggregation, etc.
+They save time and make queries more powerful and concise.
+
+Types of Built-in Functions in SQL
+SQL functions are generally categorized as:
+Aggregate Functions
+Scalar (Single Row) Functions
+String Functions
+Numeric Functions
+Date and Time Functions
+Conversion Functions
+Miscellaneous Functions

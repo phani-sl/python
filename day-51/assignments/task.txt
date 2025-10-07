@@ -1,0 +1,1 @@
+What are the built in functions available in SQL. Write the explaination with the example queries on each one of them.
