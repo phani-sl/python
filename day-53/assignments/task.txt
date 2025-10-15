@@ -1,0 +1,1 @@
+1. Create multiple tables with all the constraints. Atleast 30 + tables creation queries.(Data Definition Language Queries)
